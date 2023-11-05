@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>   Dropout Analysis Of Students  </title>
+  <link href="dropout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="image-container"> 
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVq4iPQokd1yHR9QN3IxQ9ok6EWGCdRAJ0B-jmigIRuKM94ic4PzV2GhuOYg-1l34_-pA&usqp=CAU" alt="dropout">
+       </div>
+    <div class="header">
+    <div class="line1">
+
+      <div class="logo">
+        <img src="data:image/png;base64,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">
+      </div>
+      <div class="announcement-icon" id="alert ">
+    
+        <img src=" https://cdn-icons-png.flaticon.com/128/10464/10464713.png" alt="alert"> </div>
+  
+      </div>
+  
+      <div class="announcement-container" id="alert-container">
+        <!-- Content for the container -->
+        <p>This is your announcement content.</p>
+        <button id="close-button">Close</button>
+    </div>
+        <div class="nav-container">
+    <nav>      
+        <ul>
+    <li class="nav1"><a href="#">Home</a></li>
+    <li class="nav2"><a href="#">Services</a> </li>
+     <li class="nav3"><a href="#">About</a> </li>
+      <li class="nav4"><a href="#">FAQ</a> </li>
+     
+    </ul>
+      </nav>
+
+      </div>
+     
+  
+
+  <label for="select"></label>
+
+
+  <div id="back1">
+  <div class="age">
+
+    <h2 style=" font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 16px;">Enter Details</h2>    
+ </div>
+
+    <select id="select" name="list" form="form">
+ 
+
+      <option value="1">16-17</option>
+  <option value="2">17-18</option>
+  <option value="3">18-20</option>
+  <option value="4">above 20</option>
+</select>
+        <div>
+          <select id="region">
+            <option value="">-- Select region-- </option>
+            
+              <option value="Delhi">Delhi</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="kolakata">Kolakata</option>
+      
+            
+              <option value="odisha">odisha</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Bihar">Bihar</option>
+            
+          </select>
+          
+          <h1 style="color: aliceblue;">Enter The Name</h1>
+    
+          
+          </div>
+          <div id=back2 class="back2">
+      
+            <input type="text" placeholder="Name">
+        
+        <input type="text" placeholder="INSTITUTE NAME">
+      <input type="text" placeholder="gender">
+      <input type="text" placeholder="father's Name">
+      <input type="text" placeholder="Mother's Name">
+<input type="text" placeholder=" address">
+<input type="text" placeholder="Pincode">
+<input type="text" placeholder="DOB">
+
+       </div>
+    <div class="submit">
+  
+    </div>
+    
+
+
+
+  
+   </div>
+
+   <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="modal-box">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg show-modal" data-toggle="modal" data-target="#myModal">
+                  Login
+                </button>
+ 
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content clearfix">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <div class="modal-body">
+                                <h3 class="title">Login</h3>
+                                <p class="description">Login here Using Email & Password</p>
+                                <div class="form-group">
+                                    <span class="input-icon"><i class="fa fa-user"></i></span>
+                                    <input type="email" class="form-control" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <span class="input-icon"><i class="fas fa-key"></i></span>
+                                    <input type="password" class="form-control" placeholder="Password">
+                                </div>
+                                <div class="form-group checkbox">
+                                    <input type="checkbox">
+                                    <label>Remamber me</label>
+                                </div>
+                                <a href="" class="forgot-pass">Forgot Password?</a>
+                                <button class="btn">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+    
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</body>
+
+
+</html>
